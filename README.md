@@ -1,3 +1,6 @@
+# BetterDump
+BetterDump (v1.0) is an open source memory dumping tool based on Fridump and frida-dump.
+
 # Fridump
 Fridump (v0.1) is an open source memory dumping tool, primarily aimed to penetration testers and developers. Fridump is using the Frida framework to dump accessible memory addresses from any platform supported. It can be used from a Windows, Linux or Mac OS X system to dump the memory of an iOS, Android or Windows application.
 
@@ -19,7 +22,8 @@ The following are the main flags that can be used with fridump:
       -U, --usb          device connected over usb
       -v, --verbose      verbose
       -r, --read-only    dump read-only parts of memory. More data, more errors
-      -s, --strings      run strings on all dump files. Saved in output dir.
+      -m, --modules      extract a list of modules and their base addresses from the app
+      -s, --strings      run strings on all dump files. Saved in output dir
       --max-size bytes   maximum size of dump file in bytes (def: 20971520)
 
 To find the name of a local process, you can use:
@@ -41,7 +45,7 @@ Installation
 ---
 To install Fridump you just need to clone it from git and run it:
 
-      git clone https://github.com/Nightbringer21/fridump.git
+      git clone ??
             
       python fridump.py -h
             
@@ -59,17 +63,3 @@ For iOS, installation instructions can be found [here](http://www.frida.re/docs/
 For Android, installation instructions can be found [here](http://www.frida.re/docs/android/).
 
 Note: On Android devices, make sure that the frida-server binary is running as root!
-
-Disclaimer
----
-* This is version 0.1 of the software, so I expect some bugs to be present
-* I am not a developer, so my coding skills might not be the best
-
-This tool has been tested on a Windows 7 and a Mac OS X laptop, dumping the memory of:  
-* an iPad Air 2 running iOS 8.2
-* a Galaxy Tab running Cyanogenmod 4.4.4
-* a Windows 7 laptop.
- 
-Therefore, if this tool is not working for you, I apologise and I will try to fix it.
-
-Any suggestions and comments are welcome!
